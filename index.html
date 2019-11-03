@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>My To Do List</title>
+<link href="public/static/css/app.css" rel="stylesheet"></head>
+<body>
+	<main class="my-todo-list">
+		<div class="wrapper">
+			<div class="main">
+				<!-- <input type="text" class="js-filter-by-text">
+				<select name="status" class="js-filter-by-status" id="status">
+					<option value="all" selected>All</option>
+					<option value="open">Open</option>
+					<option value="done">Done</option>
+				</select> -->
+				<select name="priority" class="js-filter-by-priority" id="priority">
+					<option value="All" selected>All</option>
+					<option value="high">High</option>
+					<option value="normal">Normal</option>
+					<option value="low">Low</option>
+				</select>
+				<input class="js-create-todo-item" type="button" value="Create">
+			</div>
+
+			<div class="js-popup-create-todo-item popup-create-todo">
+				<h2>Cteate new To Do Item</h2>
+				<form class="todo-form">
+					<label for="add-input-title">Title:</label>
+					<input class="add-input-title js-add-input-title field -title js-field" id="add-input-title" type="text">
+					<label for="add-input-desc">Description:</label>
+					<textarea class="add-input-desc js-add-input-desc field -desc js-field" id="add-input-desc"></textarea>
+					<div class="bottom">
+						<div class="left">
+							<label for="choose-priority">Priority:</label>
+							<select name="choose-priority" class="js-add-input-priority priority" id="choose-priority">
+								<option value="high" selected>High</option>
+								<option value="normal">Normal</option>
+								<option value="low">Low</option>
+							</select>
+						</div>
+						<div class="rigth">
+							<button id="cancel-button" class="js-cancel-button button" type="button">Cancel</button>
+							<button id="add-button" class="button" type="submit">Create</button>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="todo-list-result"></div>
+		</div>	
+	</main>
+  	<script type="text/javascript" src="public/static/js/app.js" async></script>
+</body>
+</html>
